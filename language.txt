@@ -1,0 +1,1682 @@
+#=====================================================================
+#=====================================================================
+#
+#	Menu systems
+#
+#=====================================================================
+#=====================================================================
+
+#-------------------------------------------------------------
+#
+#	Main Menu
+#
+#-------------------------------------------------------------
+
+MENU	"&File"
+	IDM_FILE_NEW	"&New\tAlt+N"                 
+	IDM_FILE_OPEN	"&Open...\tAlt+O"             
+	IDM_FILE_REVERT	"&Revert\tAlt+R"              
+	IDM_FILE_CLOSE	"&Close\tAlt+C/Ctrl+F4"       
+	IDM_FILE_CLOSEALL	"C&lose All\tAlt+Shift+C"     
+	IDM_FILE_SAVE	"&Save\tAlt+S"                
+	IDM_FILE_SAVEALL	"Sa&ve All\tAlt+V"            
+	IDM_FILE_SAVEAS	"Save &As...\tAlt+A"          
+	IDM_FILE_DELETE	"&Delete\tAlt+D"              
+	IDM_FILE_PRINT	"&Print...\tAlt+P"            
+	IDM_FILE_PRINTERSETUP	"Pr&inter Setup..."           
+	SUBMENU	"Recent &Files"
+		IDM_FILE_FILES_NONE	"None"                        
+	IDM_FILE_EXIT	"E&xit\tAlt+X/Alt-F4"         
+
+MENU	"&Edit"
+	IDM_EDIT_UNDO	"&Undo\tCtrl+Z"               
+	IDM_EDIT_REDO	"R&edo\tCtrl+Y"               
+	SUBMENU	"&Mode"
+		IDM_EDIT_MODE_KANJI	"&Kanji\tCtrl+K/(F4)/(Alt+^)" 
+		IDM_EDIT_MODE_ASCII	"&Ascii\tCtrl+A/(F4)/(Alt+^)" 
+		IDM_EDIT_MODE_JASCII	"&Jascii\tCtrl+J"             
+	IDM_EDIT_CUT	"Cu&t\tCtrl+X/Shift+Del"      
+	IDM_EDIT_COPY	"&Copy\tCtrl+C/Ctrl+Ins"      
+	IDM_EDIT_PASTE	"&Paste\tCtrl+V/Shift+Ins"    
+	IDM_EDIT_SELECTALL	"Select &All\tCtrl+Shift+A"   
+	IDM_EDIT_INSERTPAGEBREAK	"Insert Page &Break\tCtrl+Enter" 
+	IDM_EDIT_SEARCH	"&Search...\tCtrl+F/Ctrl+S/F8" 
+	IDM_EDIT_REPLACE	"&Replace...\tCtrl+R/Shift+F8" 
+	IDM_EDIT_FINDNEXT	"Find &Next\tCtrl+N/F9"       
+	IDM_EDIT_REVERSESEARCH	"Re&verse Search\tCtrl+B/F7"  
+
+MENU	"&Kanji"
+	IDM_KANJI_CONVERT	"&Convert\tCtrl+>/F2"         
+	IDM_KANJI_GETINFO	"&Get Info...\tCtrl+I"        
+	IDM_KANJI_RADICALLOOKUP	"&Radical Lookup...\tCtrl+L/F5" 
+	IDM_KANJI_BUSHULOOKUP	"&Bushu Lookup...\tCtrl+Shift+L" 
+	IDM_KANJI_BUSHU2LOOKUP	"Str&oke/Bushu Lookup...\tCtrl+Shift+B"                                                 
+	IDM_KANJI_SKIPLOOKUP	"&SKIP Lookup...\tCtrl+Shift+S" 
+	IDM_KANJI_HSLOOKUP	"&Hadamitzky/Spahn Lookup...\tCtrl+H" 
+	IDM_KANJI_FCLOOKUP	"&Four-Corner Lookup...\tCtrl+4" 
+	IDM_KANJI_READINGLOOKUP	"R&eading Lookup...\tCtrl+Shift+R" 
+	IDM_KANJI_INDEXLOOKUP	"&Index Lookup...\tCtrl+Shift+I" 
+	IDM_KANJI_JISTABLE	"JIS &Table...\tCtrl+T"       
+	SUBMENU	"Color &Kanji"
+		IDM_KANJI_MAKEKANJILIST	"&Make Kanji List"            
+		IDM_KANJI_APPENDKANJILIST	"&Append to Kanji List"       
+		IDM_KANJI_ADDSUBKANJILIST	"Add/&Remove Kanji..."        
+		IDM_KANJI_OPENKANJILIST	"&View Kanji List"            
+		IDM_KANJI_CLEARKANJILIST	"&Clear Kanji List"           
+	IDM_KANJI_COUNTKANJI	"Co&unt Kanji..."             
+
+MENU	"&Utilities"
+	IDM_UTILITIES_FORMATFILE	"Format &File ...\tAlt+Ctrl+F" 
+	IDM_UTILITIES_FORMATPARAGRAPH	"Format &Paragraph ...\tAlt+Shift+F"                                                 
+	IDM_UTILITIES_PAGELAYOUT	"Page &Layout...\tAlt+L"      
+	IDM_UTILITIES_DICTIONARY	"&Dictionary...\tCtrl+D/F6"   
+	IDM_UTILITIES_USERCONVERSION	"&User Conversion..."         
+	IDM_UTILITIES_OPTIONS	"&Options...\tCtrl+O"         
+	IDM_UTILITIES_CHARINFO	"Setup C&har Info..."         
+	IDM_UTILITIES_CUSTOMIZE	"&Customize..."               
+	IDM_UTILITIES_DEFAULTOPTIONS	"D&efault Options"            
+	IDM_UTILITIES_SAVESETTINGS	"&Save Settings"              
+	IDM_UTILITIES_INSTALL	"&Install..."                 
+
+MENU	"&Window"
+	IDM_WINDOW_NEXTFILE	"&Next File\tCtrl+Tab/Ctrl+PgUp" 
+	IDM_WINDOW_PREVIOUSFILE	"&Previous File\tShift+Tab/Ctrl+PgDn"                                                 
+	IDM_WINDOW_FILES	"&Files...\tAlt+W"            
+
+MENU	"&Help"
+	IDM_HELP_MAININDEX	"&Main Index...\tF1"          
+	IDM_HELP_ABOUTJWPCE	"&About JWPce..."             
+
+#-------------------------------------------------------------
+#
+#	Popup Menu -- Main window popup
+#
+#-------------------------------------------------------------
+
+	IDM_EDIT_CUT	"Cu&t\tCtrl+X/Shift+Del"      
+	IDM_EDIT_COPY	"&Copy\tCtrl+C/Ctrl+Ins"      
+	IDM_EDIT_PASTE	"&Paste\tCtrl+V/Shift+Ins"    
+	IDM_EDIT_SELECTALL	"Select &All\tCtrl+Shift+A"   
+	IDM_KANJI_GETINFO	"&Get Info...\tCtrl+I"        
+	IDM_UTILITIES_DICTIONARY	"&Dictionary...\tCtrl+D/F6"   
+	IDM_KANJI_RADICALLOOKUP	"&Radical Lookup...\tCtrl+L/F5" 
+	IDM_KANJI_BUSHULOOKUP	"&Bushu Lookup...\tCtrl+Shift+L" 
+	IDM_KANJI_BUSHU2LOOKUP	"Str&oke/Bushu Lookup...\tCtrl+Shift+B"                                                 
+	IDM_KANJI_SKIPLOOKUP	"&SKIP Lookup...\tCtrl+Shift+S" 
+	IDM_KANJI_HSLOOKUP	"&Hadamitzky/Spahn Lookup...\tCtrl+H" 
+	IDM_KANJI_FCLOOKUP	"&Four-Corner Lookup...\tCtrl+4" 
+	IDM_KANJI_READINGLOOKUP	"Reading &Lookup...\tCtrl+Shift+R" 
+	IDM_KANJI_INDEXLOOKUP	"&Index Lookup...\tCtrl+Shift+I" 
+	SUBMENU	"&Mode"
+		IDM_EDIT_MODE_KANJI	"&Kanji\tCtrl+K/(F4)"         
+		IDM_EDIT_MODE_ASCII	"&Ascii\tCtrl+A/(F4)"         
+		IDM_EDIT_MODE_JASCII	"&Jascii\tCtrl+J"             
+	IDM_KANJI_CONVERT	"Con&vert\tCtrl+>/F2"         
+	IDM_KANJI_JISTABLE	"&JIS Table...\tCtrl+T"       
+	IDM_EDIT_UNDO	"&Undo\tCtrl+Z"               
+	IDM_EDIT_REDO	"R&edo\tCtrl+Y"               
+
+#-------------------------------------------------------------
+#
+#	Popup Menu -- Japanese List box popup
+#
+#-------------------------------------------------------------
+
+	IDM_LIST_GETINFO	"&Get Info..."                
+	IDM_LIST_COPY	"&Copy\tCtrl+C/Ctrl+Ins"      
+	IDM_EDIT_SELECTALL	"Select &All\tCtrl+Shift+A"   
+	IDM_EDIT_SEARCH	"&Search...\tCtrl+F/Ctrl+S/F8" 
+	IDM_EDIT_FINDNEXT	"Find &Next\tCtrl+N/F9"       
+	IDM_LIST_INSERTTOFILE	"Insert to &File\tAlt+I"      
+	IDM_LIST_REPLACETOFILE	"&Replace to File"            
+	IDM_LIST_INSERTTONEWFILE	"Insert to &New File"         
+	IDM_LIST_INSERTTOANYFILE	"Insert to &Any File..."      
+	IDM_LIST_INSERTTO	"&Insert to"                  
+
+#=====================================================================
+#=====================================================================
+#
+#	Dialog boxes
+#
+#=====================================================================
+#=====================================================================
+
+#-------------------------------------------------------------
+#
+#	Search for Text dialog
+#
+#-------------------------------------------------------------
+
+IDD_SEARCH 	"Search for Text"
+IDC_SRSEARCH	"&Search for:"
+IDC_SRCASE	"Ignore &Case"
+IDC_SRJASCII	"&JASCII = ASCII"
+IDC_SRBACKWARD	"&Backward"
+IDC_SRWRAP	"&Wrap Around"
+IDC_SRALLFILES	"&All Open Files"
+IDOK	"&Find Next"
+IDCANCEL	"Cancel"
+
+#-------------------------------------------------------------
+#
+#	Dailog box to check if you want to save a file that has 
+#	changed before closing it.
+#
+#-------------------------------------------------------------
+
+IDD_SAVECHECK 	"Are You Sure?"
+IDOK	"&Yes!"
+IDC_SCNO	"&No"
+IDCANCEL	"&Cancel"
+LTEXT           "Has changed!  Save file before closing?"
+
+#-------------------------------------------------------------
+#
+#	Search and Replace Text dialog
+#
+#-------------------------------------------------------------
+
+IDD_REPLACE 	"Search and Replace Text"
+IDC_SRSEARCH	"&Search for:"
+IDC_SRREPLACE	"&Replace by:"
+IDC_SRCASE	"Ignore &Case"
+IDC_SRJASCII	"&JASCII = ASCII"
+IDC_SRBACKWARD	"&Backward"
+IDC_SRWRAP	"&Wrap Around"
+IDC_SRALLFILES	"&All Open Files"
+IDC_SRNOCONFIRM	"&No Confirmation"
+IDOK	"&Find Next"
+IDCANCEL	"Cancel"
+
+#-------------------------------------------------------------
+#
+#	Dialog box generated when text match is found for a 
+#	search and replace.
+#
+#-------------------------------------------------------------
+
+IDD_REPLACECONFIRM 	"Text Found!"
+LTEXT           "Text was found!  Do you want to replace?"
+IDOK	"&Yes!"
+IDC_RCNOREP	"&No"
+IDC_RCALL	"Replace &All"
+IDCANCEL	"&Cancel Replace"
+
+#-------------------------------------------------------------
+#
+#	Kanji Information dialog
+#
+#-------------------------------------------------------------
+
+IDD_KANJIINFO 	"Character Information"
+IDC_KIFROMCLIP	"From &Clipbrd"
+IDC_KIINSERT	"&Insert to File"
+IDC_KIMORE	"&More Info"
+IDOK	"&Done!"
+
+#-------------------------------------------------------------
+#
+#	Format paragraph or file
+#
+#-------------------------------------------------------------
+
+IDD_FORMATPARA 	"Format Paragraph"
+IDC_FPLEFT	"&Left:"
+IDC_FPRIGHT	"&Right:"
+IDC_FPFIRST	"&First:"
+GROUPBOX        "Indentation"
+IDC_FPSPACING	"Line &Spacing:"
+IDOK	"OK"
+IDCANCEL	"Cancel"
+
+#-------------------------------------------------------------
+#
+#	Dictionary Options Dialog
+#
+#-------------------------------------------------------------
+
+IDD_DICTOPTIONS 	"Dictionary Options"
+IDC_DOEXCLUDE	"E&xclude Entries:"
+IDC_DOAUTO	"Auto-&Search"
+IDC_DOCOMPRESS	"Com&pressed "
+IDC_DOCLIPBOARD	"&Track Clipboard"
+IDC_DOCLASSICAL	"&Classical"
+IDC_DOPRIMARY	"So&rt Priority"
+IDC_DOFULLASCII	"&Full ASCII Entry"
+IDC_DOJASCII	"&JASCII --> ASCII"
+IDC_DODICTIONARIES	"&Dictionaries"
+IDC_DOUSERDICT	"&User Dict"
+IDOK	"OK"
+IDCANCEL	"Cancel"
+IDC_DOADVSEARCH	"&Advanced Search"
+IDC_DOADVALWAYS	"A&lways Search"
+IDC_DOADVALL	"S&how all"
+IDC_DOADVI	"&i-adjectives"
+IDC_DOMARK	"&Mark"
+GROUPBOX        "Advanced Search Options"
+
+#-------------------------------------------------------------
+#
+#	Dictionary Dialog
+#
+#-------------------------------------------------------------
+
+IDD_DICTIONARY 	WS_EX_CONTEXTHELP
+IDC_DDSTRING	"&Word to Lookup:"
+IDC_DDRESULT	"&Results:"
+IDC_DDBEGIN	"&Begin With"
+IDC_DDEND	"&End With"
+IDC_DDNONAME	"No &Names"
+IDC_DDADVANCED	"&Advanced"
+IDC_DDCLASSICAL	"&Classical"
+IDC_DDFULLASCII	"&Full ASCII"
+IDC_DDJASCII	"&JASCII = ASCII"
+IDOK	"&Search"
+IDC_DDSORT	"Sor&t"
+IDC_DDINSERT	"&Insert to file"
+IDC_DDUSER	"&User Dict"
+IDC_DDOPTIONS	"&Options"
+IDCANCEL	"&Done!"
+IDC_DDCLIPBOARD	"Tac&k Clipbrd"
+IDC_DDPRIORITY	"Sort &Priority"
+IDC_DDADVALWAYS	"A&lways Search"
+IDC_DDADVALL	"S&how all"
+IDC_DDADVI	"i-adjecti&ves"
+IDC_DDMARK	"&Mark"
+
+#-------------------------------------------------------------
+#
+#	Count Kanji Dialog
+#
+#-------------------------------------------------------------
+
+IDD_KANJICOUNT 	"Kanji Count"
+IDC_CKALL	"&All Open Files"
+IDC_CKEXCLUDE	"&Exclude from Count"
+IDC_CKINCLUDE	"I&nclude Only these Kanji"
+GROUPBOX        "Kanji on Kanji List"
+IDC_CKFREQUENCY	"&Frequency"
+IDC_CKONYOMI	"&On-yomi"
+IDC_CKKUNYOMI	"&Kun-yomi"
+IDC_CKMEANING	"&Meaning"
+GROUPBOX        "Include In"
+IDOK	"&Count"
+IDC_CKINFO	"&Get Info"
+IDC_CKINSERT	"&Insert to File"
+IDC_CKLIST	"Ka&nji:"
+IDCANCEL	"&Done"
+
+#-------------------------------------------------------------
+#
+#	Open Files Dialog
+#
+#-------------------------------------------------------------
+
+IDD_FILES 	"Open Files"
+IDOK	"OK"
+IDCANCEL	"Cancel"
+
+#-------------------------------------------------------------
+#
+#	Install Dialog
+#
+#-------------------------------------------------------------
+
+IDD_INSTALL 	"Install JWPce"
+IDOK	"&Yes"
+IDC_IDADVANCED	"&Advanced"
+IDCANCEL	"&No"
+LTEXT           "This copy of JWPce is not the currently installed version, or some other program is using the extensions used by JWPce."
+LTEXT           "Do you want to install this copy of JWPce?"
+IDC_IDINSTALL	"&Do not check again!"
+
+#-------------------------------------------------------------
+#
+#	Advanced Install Dialog
+#
+#-------------------------------------------------------------
+
+IDD_ADVINSTALL 	"Advanced Install Options"
+IDC_AIJCE	"Normal JWP&ce (.jce)"
+IDC_AIJWP	"Normal &JWP (.jwp)"
+IDC_AIJCP	"J&WPce Project (.jcp)"
+IDC_AIJFC	"J&FC Flash Card File (.jfc, edit only)"
+IDC_AIEUC	"&EUC (.euc)"
+IDC_AISJS	"&Shift-JIS (.sjs)"
+IDC_AIUTF	"&UTF (.utf)"
+IDC_AIJIS	"&New JIS (.jis)"
+IDC_AIOLD	"&Old JIS (.old)"
+IDC_AINEC	"NEC J&IS (.nec)"
+CTEXT           "Disabled extensions are already assigned to JWPce."
+GROUPBOX        "File Extensions"
+IDC_AISTART	"&Put in Start Menu"
+IDC_AIDESKTOP	"Put on &Desktop"
+IDC_AIGROUP	"&Group:"
+LTEXT           "A blank group entry will cause JWPce to be placed directly in the Programs menu."
+GROUPBOX        "Start Menu and Desktop"
+IDOK	"OK"
+IDCANCEL	"Cancel"
+
+#-------------------------------------------------------------
+#
+#	User conversions Dialog 
+#
+#-------------------------------------------------------------
+
+IDD_CONVERTUSER 	"User Kana to Kanji Conversions"
+IDC_EDITLIST	"User &Conversions:"
+IDC_EDITLISTADD	"&Add"
+IDC_EDITLISTEDIT	"&Edit"
+IDC_EDITLISTFIND	"&Find"
+IDC_EDITLISTDELETE	"&Delete"
+IDC_EDITLISTUP	"&Up"
+IDC_EDITLISTDOWN	"Do&wn"
+IDC_EDITLISTIMPORT	"I&mport"
+IDC_UCSORT	"&Sort"
+IDC_EDITLISTINSERT	"&Insert to File"
+IDOK	"OK"
+IDCANCEL	"Cancel"
+
+#-------------------------------------------------------------
+#
+#	Edit a User conversion Dialog 
+#
+#-------------------------------------------------------------
+
+IDD_CONVERTEDIT 	"User Conversion"
+IDC_CEKANA	"&Kana:"
+IDC_CEKANJI	"Ka&nji:"
+LTEXT           "Separate multiple kanji entries with /'s."
+IDC_CEGODAN	"&Godan doushi (r-ending verb)"
+IDC_CEICHIDAN	"&Ichidan doushi (ru-ending verb)"
+IDC_CEIADJ	"I-keiyoushi (i-&adjective)"
+IDOK	"OK"
+IDCANCEL	"Cancel"
+
+#-------------------------------------------------------------
+#
+#	User Dictionary Dialog
+#
+#-------------------------------------------------------------
+
+IDD_DICTUSER 	"User Dictionary"
+IDC_EDITLIST	"E&ntries:"
+IDC_EDITLISTADD	"&Add"
+IDC_EDITLISTEDIT	"&Edit"
+IDC_EDITLISTFIND	"&Find"
+IDC_EDITLISTDELETE	"&Delete"
+IDC_EDITLISTUP	"&Up"
+IDC_EDITLISTDOWN	"Do&wn"
+IDC_EDITLISTIMPORT	"I&mport"
+IDC_UDSORT	"&Sort"
+IDC_EDITLISTINSERT	"&Insert to File"
+IDOK	"&OK"
+IDCANCEL	"&Cancel"
+
+#-------------------------------------------------------------
+#
+#	Edit entry in User Dictionary Dialog
+#
+#-------------------------------------------------------------
+
+IDD_DICTUSEREDIT 	"Edit User Dictionary"
+IDC_DEKANA	"&Kana:"
+IDC_DEKANJI	"Ka&nji:"
+IDC_DEMEANING	"&Meaning:"
+LTEXT           "Separate multiple meanings using the / character."
+IDOK	"&OK"
+IDCANCEL	"&Cancel"
+
+#-------------------------------------------------------------
+#
+#	Searched Dictionaries Dailog
+#
+#-------------------------------------------------------------
+
+IDD_DICTIONARIES 	"Searched Dictionaries"
+IDC_DCLIST	"Dictionaries &List:"
+IDC_EDITLISTADD	"&Add"
+IDC_EDITLISTEDIT	"&Edit"
+IDC_EDITLISTDELETE	"&Delete"
+IDC_EDITLISTUP	"&Up"
+IDC_EDITLISTDOWN	"Do&wn"
+IDC_DCDEFAULT	"Default Lis&t"
+IDOK	"&OK"
+IDCANCEL	"&Cancel"
+
+#-------------------------------------------------------------
+#
+#	Edit a Searched Dictionary Dailog
+#
+#-------------------------------------------------------------
+
+IDD_DICTEDITDICTIONARIES 	"Edit Supplemental Dictionary"
+IDC_DSNAME	"&Name"
+IDC_DSFILE	"&File:"
+IDC_DSBROWSE	"Bro&wse"
+IDC_DSUPDATE	"&Refresh"
+LTEXT           "Format"
+IDC_DSEUC	"&EUC"
+IDC_DSUTF8	"&UTF-8"
+IDC_DSMIXED	"Mi&xed"
+LTEXT           "Type"
+IDC_DSINDEX	"&Indexed"
+IDC_DSMEMORY	"&Memory"
+IDC_DSBUFFER	"&Buffered"
+LTEXT           "Names"
+IDC_DSNONAMES	"N&o Names"
+IDC_DSNAMES	"&Has Names"
+IDC_DSONLY	"Onl&y Names"
+IDC_DSSEARCH	"&Search This Dictionary"
+IDC_DSQUIET	"&Quiet handling of errors"
+IDC_DSKEEP	"&Keep dictionary open"
+IDC_DSCLASSICAL	"&Classical dictionary"
+GROUPBOX        "Properties"
+IDC_DSAUTO	"&Auto"
+IDC_DSUSER	"User dictionary (special editable dictionary)"
+IDOK	"OK"
+IDCANCEL	"Cancel"
+
+#-------------------------------------------------------------
+#
+#	Duplicate File Dialog -- This is generated when the user
+#		tries to open a file that is already open.
+#
+#-------------------------------------------------------------
+
+IDD_DUPLICATE 	"Duplicate File"
+LTEXT           "This file is already open!  What do you want to do?"
+IDOK	"&Edit Existing File"
+IDC_DFOPEN	"&Open New Copy"
+IDC_DFREPLACE	"&Replace with New"
+IDCANCEL	"&Cancel"
+
+#-------------------------------------------------------------
+#
+#	Radical Lookup Dialog
+#
+#-------------------------------------------------------------
+
+IDD_RADICALLOOKUP 	"Radical Lookup"
+IDC_RLRADICALS	"&Radicals:"
+IDOK	"&Search"
+IDC_RLCLEAR	"&Clear"
+IDC_RLINFO	"&Get Info"
+IDC_RLINSERT	"&Insert->File"
+IDC_RLCOPY	"C&opy->Clip"
+IDCANCEL	"&Done"
+IDC_RLSTROKE	"S&trokes"
+IDC_RLANY	"&Any"
+IDC_RLAUTO	"A&uto"
+IDC_RLPM1	"+/-&1"
+IDC_RLPM2	"+/-&2"
+IDC_RLRESULT	"&Matches:"
+
+#-------------------------------------------------------------
+#
+#	JIS Table Dialog
+#
+#-------------------------------------------------------------
+
+IDD_JISTABLE 	"Character Table"
+IDC_JTTABLE	"C&har:"
+IDC_JTJISCODE	"&JIS:"
+IDC_JTEUCCODE	"&EUC:"
+IDC_JTSJISCODE	"&Shift-JIS:"
+IDC_JTUNICODE	"&Unicode:"
+GROUPBOX        "Char Information"
+IDC_JTINFO	"&Get Info"
+IDC_JTINSERT	"&Insert to File"
+IDC_JTCLIP	"&Copy->Clip"
+IDCANCEL	"&Done"
+
+#-------------------------------------------------------------
+#
+#	Printing Dialog -- Generated when JWPce is printing a file.
+#
+#-------------------------------------------------------------
+
+IDD_PRINTING 	"Printing"
+IDCANCEL	"Cancel Printing"
+LTEXT           "Printing file:"
+
+#-------------------------------------------------------------
+#
+#	Margins page of the Layout Dialog
+#
+#-------------------------------------------------------------
+
+IDD_LAYOUTMARGINS
+IDC_LMFLEFT	"&Left"
+IDC_LMFRIGHT	"&Right"
+IDC_LMFTOP	"&Top"
+IDC_LMFBOTTOM	"&Bottom"
+IDC_LMFLANDSCAPE	"&Landscape"
+IDC_LMFVERTICAL	"&Vertical"
+LTEXT           "Width (kanji):"
+IDC_LMFROMDEFAULT	"&From Default"
+GROUPBOX        "This File Settings"
+IDC_LMDLANDSCAPE	"La&ndscape"
+IDC_LMDLEFT	"L&eft"
+IDC_LMDRIGHT	"R&ight"
+IDC_LMDTOP	"T&op"
+IDC_LMDBOTTOM	"Botto&m"
+IDC_LMDVERTICAL	"Verti&cal"
+LTEXT           "Width (kanji):"
+IDC_LMFROMFILE	"From T&his File"
+GROUPBOX        "Default Settings"
+
+#-------------------------------------------------------------
+#
+#	Advanced page of the Layout Dialog
+#
+#-------------------------------------------------------------
+
+IDD_LAYOUTADVANCED 
+IDC_LAJUSTIFY	"&Justify ASCII Text"
+GROUPBOX        "ASCII Text Positions"
+IDC_LAPOSHEADLEFT	"&Left (kanji):"
+IDC_LAPOSHEADRIGHT	"&Right (kanji):"
+IDC_LAPOSHEADTOP	"&Top (lines):"
+IDC_LAPOSHEADBOTTOM	"&Bottom (lines):"
+GROUPBOX        "Header/Footer Positions"
+
+#-------------------------------------------------------------
+#
+#	Header page of the Layout Dialog
+#
+#-------------------------------------------------------------
+
+IDD_LAYOUTHEADER
+IDC_LHHEADLEFT	"&Left:"
+IDC_LHHEADCENTER	"&Center:"
+IDC_LHHEADRIGHT	"&Right:"
+IDC_LHEDIT	"&Edit:"
+IDC_LHNOFIRST	"&No First Page"
+IDC_LHODDEVEN	"&Odd && Even"
+LTEXT           "&&D -- Date\n&&F -- File && Path\n&&N -- File Name\n&&P -- Page\n&&T -- Time\n&&L -- Title\n&&S -- Subject\n&&A -- Author\n&&K -- Keywords\n&&C -- Comments\n&&&& -- && character"
+GROUPBOX        "Special Codes"
+
+#-------------------------------------------------------------
+#
+#	Summary page of the Layout Dialog
+#
+#-------------------------------------------------------------
+
+IDD_LAYOUTSUMMARY 
+IDC_LSTITLE	"&Title:"
+IDC_LSSUBJECT	"&Subject:"
+IDC_LSAUTHOR	"&Author:"
+IDC_LSKEYWORDS	"&Keywords:"
+IDC_LSCOMMENTS	"&Comments:"
+
+#-------------------------------------------------------------
+#
+#	Date/Time page of the Layout Dialog
+#
+#-------------------------------------------------------------
+
+IDD_LAYOUTDATE 
+IDC_LDDATE	"&Date:"
+IDC_LDTIME	"&Time:"
+IDC_LDAM	"&AM:"
+IDC_LDPM	"&PM:"
+GROUPBOX        "Special Codes Not Supported"
+LTEXT           "&&Y -- Long Year\n&&y -- Short Year\n&&M -- Month\n&&D -- Day\n\n&&H -- Hour (24)\n&&h -- Hour (12)\n&&N -- Minute\n&&A -- AM/PM\n&&&& -- && char"
+GROUPBOX        "Special Codes"
+
+#-------------------------------------------------------------
+#
+#	Advanced page of the Options Dialog
+#
+#-------------------------------------------------------------
+
+IDD_OPTADVANCED 
+IDC_OAALLOCSIZE	"&Allocation Size"
+IDC_OACONVERTSIZE	"&Conv Choices"
+IDC_OAUNDOLEVELS	"&Undo levels"
+IDC_OAFONTCACHE	"&Font Cache"
+IDC_OAHISTORY	"&History Cache"
+IDC_OABUFFER	"Dictionary &Buffer Size"
+IDC_OASEARCHOPEN	"Keep Search Dialogs &Open"
+IDC_OACACHEINFO	"Cache &Kanji Information"
+IDC_OACACHEDISPLAY	"Cache &Display Font"
+
+#-------------------------------------------------------------
+#
+#	Display page of the Options Dialog
+#
+#-------------------------------------------------------------
+
+IDD_OPTDISPLAY 
+IDC_ODVSCROLL	"&Vertical Scroll Bar"
+IDC_ODHSCROLL	"&Horizontal Scroll Bar"
+IDC_ODKSCROLL	"&Kanji List Scroll Bar"
+GROUPBOX        "Scroll Bars"
+IDC_ODHIGHLIGHT	"Select Highlight &Color"
+GROUPBOX        "Highlight Color"
+IDC_ODSTATUSBAR	"&Status Bar"
+IDC_ODKANJIBAR	"Knaji &Bar"
+IDC_ODKBARTOP	"Kanji-bar at &Top"
+IDC_ODTOOLBAR	"T&oolbar"
+GROUPBOX        "Status/Kanji/Tool Bar"
+IDC_ODAUTOSCROLL	"Enable &Auto-Scroll"
+IDC_ODSCROLLSPEED	"Scroll S&peed (lower is faster)"
+GROUPBOX        "Auto Scroll"
+
+#-------------------------------------------------------------
+#
+#	File/Clipboard page of the Options Dialog
+#
+#-------------------------------------------------------------
+
+IDD_OPTFILE 
+IDC_OCDUPOPEN	"&Open Another Copy"
+IDC_OCDUPCHANGE	"&Change to Open File"
+IDC_OCDUPPROMPT	"&Ask User"
+GROUPBOX        "Duplicate Files"
+IDC_OCSAVEBACKUP	"Save &Backup"
+GROUPBOX        "File Save Options"
+IDC_OCCLIPIMPORT	"&Import"
+IDC_OCCLIPEXPORT	"&Export"
+IDC_OCNOBITMAP	"No BIT&MAP format"
+IDC_OCNOUNICODE	"No &UNICODETEXT format"
+GROUPBOX        "Clipboard Options"
+
+#-------------------------------------------------------------
+#
+#	Font/Format page of the Options Dialog
+#
+#-------------------------------------------------------------
+
+IDD_OPTFONT 
+GROUPBOX        "ASCII Font"
+IDC_OFASCIIFONT	"&ASCII font"
+GROUPBOX        "Relax Paragraph Format"
+IDC_OFRELAXPUNCT	"P&unctuation"
+IDC_OFRELAXSMALL	"&Small kana"
+GROUPBOX        "Kanji Font"
+IDC_OFFONT	"&Font"
+IDC_OFSHOWALL	"S&how All Fonts"
+IDC_OFAUTO	"Au&tomatic Selection"
+IDC_OFVERTICAL	"&Vertical
+IDC_OFFONTNAME	"Choose F&ont:"
+IDC_OFHEIGHT	"&Pixels"
+
+#-------------------------------------------------------------
+#
+#	General page of the Options Dialog
+#
+#-------------------------------------------------------------
+
+IDD_OPTGENERAL 
+IDC_OGRESTOREPOS	"Restore &Window Position"
+IDC_OGRELOADFILES	"&Reload Previous Files"
+GROUPBOX        "Startup Options"
+IDC_OGWIDTHDYNAMIC	"&Dynamic"
+IDC_OGWIDTHFIXED	"&Fixed"
+IDC_OGWIDTHPRINTER	"&Printer"
+IDC_OGWIDTH	"&Size"
+GROUPBOX        "Line Width"
+IDC_OGSAVESETTINGS	"Save Settings on E&xit"
+IDC_OGCONFIRMEXIT	"Confirm &Exit on Last File"
+GROUPBOX        "Termination Options"
+IDC_OGCLOSEFILE	"C&loses File"
+IDC_OGCLOSEPROGRAM	"Cl&ose Program"
+GROUPBOX        "Close Button"
+IDC_OGINCHES	"&inches"
+IDC_OGCM	"&cm"
+GROUPBOX        "Units"
+
+#-------------------------------------------------------------
+#
+#	Miscelaneous page of the Options Dialog
+#
+#-------------------------------------------------------------
+
+IDD_OPTMISC 
+CONTROL         "Show &Titles"
+CONTROL         "&Compressed"
+CONTROL         "&Single dialog"
+PUSHBUTTON      "S&etup"
+GROUPBOX        "Character Information"
+CONTROL         "Insert on new &Lines"
+GROUPBOX        "Insert Into File"
+IDC_OMCOLORKANJI	"&Use Color Kanji"
+IDC_OMINLIST	"Color Kanji &In List"
+IDC_OMNOTINLIST	"Color Kanji &Not in List"
+IDC_OMKANJICOLOR	"Select &Kanji Color"
+IDC_OMCOLORBITMAP	"Clipboard &BITMAP"
+IDC_OMCOLORPRINT	"&Printing"
+LTEXT           "Determines if color- kanji is enabled in these special cases."
+GROUPBOX        "Special Cases"
+GROUPBOX        "Color-Kanji"
+
+#-------------------------------------------------------------
+#
+#	SKIP Lookup Dialog
+#
+#-------------------------------------------------------------
+
+IDD_SKIPLOOKUP 	"SKIP Lookup"
+IDOK	"&Search"
+IDC_RLRESULT	"&Matches:"
+IDC_RLCLEAR	"&Clear"
+IDC_RLINFO	"&Get Info"
+IDC_RLINSERT	"&Insert->File"
+IDC_RLCOPY	"C&opy->Clip"IDC_RLCOPY,223,35,50,14
+IDCANCEL	"&Done"
+IDC_SLTYPE	"&Type"
+IDC_SLS1	"St&rokes"
+IDC_SLS2	"Stro&kes"
+IDC_RLAUTO	"&Automatic Search"
+IDC_SLMISSCODES	"I&nclude Mis-codes"
+IDC_SLSKIPTYPE	"Types"
+
+#-------------------------------------------------------------
+#
+#	Four-Corners Lookup Dialog
+#
+#-------------------------------------------------------------
+
+IDD_FCLOOKUP 	"Four-Corner Lookup"
+IDOK	"&Search"
+IDC_RLRESULT	"&Matches:"
+IDC_RLCLEAR	"&Clear"
+IDC_RLINFO	"&Get Info"
+IDC_RLINSERT	"&Insert->File"
+IDC_RLCOPY	"C&opy->Clip"
+IDCANCEL	"&Done"
+IDC_RLAUTO	"&Automatic Search"
+IDC_FC1	"&Up-left"
+IDC_FC2	"Up-&right"
+IDC_FC3	"Down-&left"
+IDC_FC4	"Do&wn-right"
+IDC_FC5	"&Fifth"
+
+#-------------------------------------------------------------
+#
+#	Bushu Lookup Dialog
+#
+#-------------------------------------------------------------
+
+IDD_BUSHULOOKUP 	"Bushu Lookup"
+IDC_RLRADICALS	"&Radicals:"
+IDC_RLRESULT	"&Matches:"
+IDOK	"&Search"
+IDC_RLCLEAR	"&Clear"
+IDC_RLINFO	"&Get Info"
+IDC_RLINSERT	"&Insert->File"
+IDC_RLCOPY	"C&opy->Clip"
+IDCANCEL	"&Done"
+IDC_BLSTROKE	"S&trokes"
+IDC_RLAUTO	"A&uto"
+IDC_BLNELSON	"&Nelson"
+IDC_BLCLASSICAL	"C&lassical"
+
+#-------------------------------------------------------------
+#
+#	Index Lookup Dialog
+#
+#-------------------------------------------------------------
+
+IDD_INDEXLOOKUP 	"Index Lookup"
+IDOK	"&Search"
+IDC_RLRESULT	"&Matches:"
+IDC_RLCLEAR	"&Clear"
+IDC_RLINFO	"&Get Info"
+IDC_RLINSERT	"&Insert->File"
+IDC_RLCOPY	"C&opy->Clip"
+IDCANCEL	"&Done"
+IDC_ILTYPE	"&Type of Index"
+IDC_ILINDEX	"Inde&x"
+IDC_ILVOL	"&Volume"
+
+#-------------------------------------------------------------
+#
+#	Reading Lookup Dialog
+#
+#-------------------------------------------------------------
+
+IDD_READINGLOOKUP 	"Reading Lookup"
+IDOK	"&Search"
+IDC_RLRESULT	"&Matches:"
+IDC_RLCLEAR	"&Clear"
+IDC_RLINFO	"&Get Info"
+IDC_RLINSERT	"&Insert->File"
+IDC_RLCOPY	"C&opy->Clip"
+IDCANCEL	"&Done"
+IDC_RLTYPE	"T&ype"
+IDC_RLSTRING	"&Reading"
+IDC_RLSTROKE	"S&trokes"
+IDC_RLKUN	"&Flexible kun-yomi match"
+IDC_RLWORD	"&Allow partial word matches"
+
+#-------------------------------------------------------------
+#
+#	Hadamitzky/Spahn Lookup Dialog
+#
+#-------------------------------------------------------------
+
+IDD_HSLOOKUP 	"Hadamitzky/Spahn Lookup"
+IDOK	"&Search"
+IDC_RLRESULT	"&Matches:"
+IDC_RLCLEAR	"&Clear"
+IDC_RLINFO	"&Get Info"
+IDC_RLINSERT	"&Insert->File"
+IDC_RLCOPY	"C&opy->Clip"
+IDCANCEL	"&Done"
+IDC_RLAUTO	"&Auto Search"
+IDC_HSVARIANTS	"Show &Variants"
+IDC_HSRADCHAR	"&Radicals"
+IDC_HSRADSTROKE	"Radical Stro&kes"
+IDC_HSRADICAL	"Radica&l"
+IDC_HSOTHER	"O&ther Strokes"
+IDC_HSKANJI	"Inde&x"
+
+#-------------------------------------------------------------
+#
+#	Stroke/Bushu Lookup Dialog
+#
+#-------------------------------------------------------------
+
+IDD_BUSHU2LOOKUP 	"Stroke/Bushu Lookup"
+IDOK	"&Search"
+IDC_RLRESULT	"&Matches:"
+IDC_RLCLEAR	"&Clear"
+IDC_RLINFO	"&Get Info"
+IDC_RLINSERT	"&Insert->File"
+IDC_RLCOPY	"C&opy->Clip"
+IDCANCEL	"&Done"
+IDC_RLAUTO	"&Auto Search"
+IDC_HSVARIANTS	"Show &Variants"
+IDC_HSRADCHAR	"&Radicals"
+IDC_HSRADSTROKE	"Radical Stro&kes"
+IDC_HSRADICAL	"Radica&l"
+IDC_HSOTHER	"&Total Strokes"
+IDC_BLNELSON	"&Nelson"
+IDC_BLCLASSICAL	"C&lassical"
+
+#-------------------------------------------------------------
+#
+#	Choose a Color Dialog
+#
+#-------------------------------------------------------------
+
+IDD_CHOOSECOLOR 	"Choose Color"
+IDC_CCRED	"&Red"
+IDC_CCGREEN	"&Green"
+IDC_CCBLUE	"&Blue"
+GROUPBOX        "Current Color"
+GROUPBOX        "Predefined Colors"
+IDOK	"OK"
+IDCANCEL	"Cancel"
+
+#-------------------------------------------------------------
+#
+#	Options Dialog -- The frame only.  The pages each have
+#		their own dialog box templet
+#
+#-------------------------------------------------------------
+
+IDD_OPTIONS 	"Options"
+IDOK	"OK"
+IDCANCEL	"Cancel"
+IDC_TABHELP	"Help"
+
+#-------------------------------------------------------------
+#
+#	Page Layout Dialog -- The frame only.  The pages each 
+#		have their own dialog box templet
+#
+#-------------------------------------------------------------
+
+IDD_LAYOUT 	"Page Layout"
+IDOK	"OK"
+IDCANCEL	"Cancel"
+IDC_TABHELP	"Help"
+
+#-------------------------------------------------------------
+#
+#	More Character Inforamtion Dialog
+#
+#-------------------------------------------------------------
+
+IDD_MOREINFO 	"More Character Information"
+IDC_MIXREF	"&Cross-reference entires:"
+IDOK	"Done"
+
+#-------------------------------------------------------------
+#
+#	Add or delete color kanji
+#
+#-------------------------------------------------------------
+
+IDD_ADDCOLORKANJI 	"Add or Remove Color Kanji"
+IDC_AKKANJI	"Ka&nji:"
+IDOK	"&Add"
+IDC_AKDELETE	"&Remove"
+IDCANCEL	"Cancel"
+
+#-------------------------------------------------------------
+#
+#	History dialog
+#
+#-------------------------------------------------------------
+
+IDD_HISTORY 	"Dialog"
+IDOK	"OK"
+IDCANCEL	"Cancel"
+
+#-------------------------------------------------------------
+#
+#	Configure character Information
+#
+#-------------------------------------------------------------
+
+IDD_INFOCONFIG 	"Configure Character Information"
+LTEXT           "&Bushu:"
+GROUPBOX        "Character Information"
+GROUPBOX        "More Information"
+IDOK	"&OK"
+IDCANCEL	"&Cancel"
+IDC_ICDEFAULT	"&Default"
+
+#=====================================================================
+#=====================================================================
+#
+#	String table
+#
+#=====================================================================
+#=====================================================================
+
+#-------------------------------------------------------------
+#
+#	About message box
+#
+#	Make sure to include the language of translation in the text 
+#	message and the names of the translaters.   Thank You!
+#
+    IDS_ABOUT_TEXT          "JWPce Version %s.\n\nA Japanese Word Processor for Windows 95/98/ME/NT/2000/XP/CE/PocketPC.\n\nCopyright (C) 1997-2002, glenn rosenthal.  Distributed under GNU General Public License..\n\nInterface inspired by Stephen Chung's JWP program.\n\nEnglish translation provided by glenn rosenthal."
+    IDS_ABOUT_TITLE         "About JWPce %s"
+
+#-------------------------------------------------------------
+#
+#	Tiles for general error and warning message boxes
+#
+    IDS_AREYOUSURE          "Are You Sure?"
+    IDS_WARNING             "JWPce Warning!"
+
+#-------------------------------------------------------------
+#
+#	Title for terminal error message box.  The actual errors
+#	are further down in the list
+#
+    IDS_ERROR_TERMINAL      "JWPce TERMINAL ERROR!"
+
+#-------------------------------------------------------------
+#
+#	Tiles for general error and warning message boxes
+#
+    IDS_ERROR               "JWPce ERROR!"
+    IDS_ERROR_MEMORY        "Out of Memory!"
+    IDS_ERROR_SAVECONVERT   "Cannot save the user kana->kanji selections!\n\n%s"
+
+#-------------------------------------------------------------
+#
+#	Clipboard read error message box.
+#
+    IDS_ERROR_CLIPTEXT      "Cannot read data on the clipboard!"
+    IDS_ERROR_CLIPTITLE     "Clipboard Error!"
+
+#-------------------------------------------------------------
+#
+#	Terminal errors -- These errors will stop JWPce
+#
+    IDS_TERM_MENU           "Unable to Load Menu!"
+    IDS_TERM_POPUP          "Unable to Load Popup!"
+    IDS_TERM_ACCEL          "Unable to load Accelerators!"
+    IDS_TERM_REGCLASS       "Unable to register main window class!"
+    IDS_TERM_WINDOW         "Unable to open main window!"
+    IDS_TERM_INITIALIZE     "Unable to initialize %s!"
+    IDS_TERM_FONTS          "fonts"
+    IDS_TERM_STATUS         "status bar"
+    IDS_TERM_KANAKANJI      "kana->kanji converter"
+    IDS_TERM_CONTROLS       "edit controls"
+    IDS_TERM_FILEWINDOW     "file window"
+    IDS_TERM_INFO           "info windows"
+    IDS_TERM_LOOKUP         "kanji lookup windows"
+    IDS_TERM_STARTUP        "startup file"
+    IDS_TERM_COM            "Unable to initialize the COM interface!"
+
+#-------------------------------------------------------------
+#
+#	Install strings.
+#
+#	Suggested program group.
+#
+    IDS_INST_GROUP          "Japanese"
+#
+#	Registry entry used to identify files associated with JWPce.
+#
+    IDS_INST_FILETYPE       "Japanese Text File"
+    IDS_INST_PROJECTTYPE    "JWPce Project File"
+
+#-------------------------------------------------------------
+#
+#	Startup and shutdown messages messages
+#
+    IDS_START_CONFIGLOAD    "Unable to load the configuration file %s.\n\nInitializing with default values!"
+    IDS_START_CONFIGSAVE    "Cannot save configuration file!\n\n%s"
+    IDS_START_CONFIGWRITE   "Cannot write to configuration file!\n\n%s"
+
+#-------------------------------------------------------------
+#
+#	Printing strings
+#
+    IDS_PRINT_ERROR         "Print Error!"
+    IDS_PRINT_NOPRINTERS    "There are no printers on this system!"
+    IDS_PRINT_ABORT         "Aborting ..."
+    IDS_PRINT_PAGE          "page %d"
+    IDS_PRINT_ERRORTEXT     "Error during printing file!\n\n%s"
+
+#-------------------------------------------------------------
+#
+#	Language ID.  DO NOT CHANGE!  This determins the version
+#	of JWPce that this translation goes with, and platform:
+#
+#	Platform codes are: W - Windows, H - Win CE HPC, P - Win CE PPC
+#
+    IDS_LANG_ID             "W1.42"
+#
+#	This is the message generated when JWPce tries to load
+#	a localization file that does not match the current 
+#	version or platform.
+#
+#	This error actually is not read from the localization 
+#	file yet, but I may change this in the future.
+#
+    IDS_LANG_ERRORTEXT      "Language file does not match this version of JWPce!\nUsing English language default.\n\n%s"
+    IDS_LANG_ERRORTITLE     "Language file error!"
+
+#-------------------------------------------------------------
+#
+#	Names of varius history dialogs.
+#
+    IDS_HIST_DICTIONARY     "Dictionary History"
+    IDS_HIST_SEARCH         "Search History"
+    IDS_HIST_REPLACE        "Replace History"
+
+#-------------------------------------------------------------
+#
+#	Tool names for the toolbar.
+#
+#	Not used in CE
+#
+    IDS_TOOL_NEW            "New (Alt+N)"
+    IDS_TOOL_OPEN           "Open (Alt+0)"
+    IDS_TOOL_SAVE           "Save (Alt+S)"
+    IDS_TOOL_DELETE         "Delete (Alt+D)"
+    IDS_TOOL_PRINT          "Print (Alt+P)"
+    IDS_TOOL_UNDO           "Undo (Ctrl+Z)"
+    IDS_TOOL_REDO           "Redo (Ctrl+Y)"
+    IDS_TOOL_KANJI          "Kanji Mode (Ctrl+K)"
+    IDS_TOOL_ASCII          "ASCII Mode (Ctrl+A)"
+    IDS_TOOL_JASCII         "JASCII Mode (Ctrl+J)"
+    IDS_TOOL_CUT            "Cut (Ctrl+X)"
+    IDS_TOOL_COPY           "Copy (Ctrl+C)"
+    IDS_TOOL_PASTE          "Paste (Ctrl+V)"
+    IDS_TOOL_SEARCH         "Search (Ctrl+F)"
+    IDS_TOOL_REPLACE        "Replace (Ctrl+R)"
+    IDS_TOOL_NEXT           "Find Next (Ctrl+N)"
+    IDS_TOOL_REVERSE        "Reverse Direction (Ctrl+B)"
+    IDS_TOOL_CONVERT        "Kanji Convert (F2)"
+    IDS_TOOL_INFO           "Char Info (Ctrl+I)"
+    IDS_TOOL_RADICAL        "Radical Lookup (Ctrl+L)"
+    IDS_TOOL_BUSHU          "Bushu Lookup (Ctrl+Shift+L)"
+    IDS_TOOL_BS             "Bushu/Stroke Lookup (Ctrl+Shift+B)"
+    IDS_TOOL_SKIP           "SKIP Lookup (Ctrl+Shift+S)"
+    IDS_TOOL_HS             "Hadamitzky/Spahn Lookup (Ctrl+H)"
+    IDS_TOOL_FOURCORNER     "Four-Corner Lookup (Ctrl+4)"
+    IDS_TOOL_READING        "Reading Lookup (Ctrl+Shift+R)"
+    IDS_TOOL_INDEX          "Index Lookup (Ctrl+Shift+I)"
+    IDS_TOOL_JISTABLE       "JIS Table (Ctrl+T)"
+    IDS_TOOL_COUNTKANJI     "Count Kanji"
+    IDS_TOOL_COLORKANJI     "Color Kanji"
+    IDS_TOOL_FORMATFILE     "Format File (Alt+Ctrl+F)"
+    IDS_TOOL_FORMATPARA     "Format Paragraph (Alt+Shift+F)"
+    IDS_TOOL_LAYOUT         "Page Layout (Alt+L)"
+    IDS_TOOL_DICTIONARY     "Dictionary (Ctrl+D/F6)"
+    IDS_TOOL_CONVERSIONS    "User Conversions"
+    IDS_TOOL_OPTIONS        "Options (Ctrl+O)"
+
+#-------------------------------------------------------------
+#
+#	Windows CE tool tips, not used in Windows 95/98/ME/NT/2000
+#
+    IDS_TOOL_TIPS           "."
+
+#-------------------------------------------------------------
+#
+#	File handling messages
+#
+#	Templet for untitled files -- Keep the []!
+#
+    IDS_FILE_UNNAMED        "[Untitled %d]"
+#
+#	Some messages
+#
+    IDS_FILE_CORRUPTED      "Unable to load file, corrupted or too large!\n%s"
+    IDS_FILE_ERROR          "Unable to Open File!"
+    IDS_FILE_LAST           "Last file closed!  Do you want to Exit?"
+#
+#	This is a fatal error.  We are probably out of memory, but JWPce
+#	could not create blank file.
+#
+    IDS_FILE_CREATEFATAL    "Cannot generate blank working file ...\n\nBye!"
+#
+#	Confirm file delete
+#
+    IDS_FILE_DELETETITLE    "Confirm Deletion!"
+    IDS_FILE_DELETETEXT     "Are you sure you want to delete the file?\n\n%s"
+#
+#	Save project messages
+#
+    IDS_FILE_PROJTITLE      "Open Project"
+    IDS_FILE_PROJTEXT       "Do you want to close all open files before opening the project?"
+    IDS_FILE_PROJERROR      "Cannot open project file!\n\n%s"
+    IDS_FILE_PROJCORRUP     "Project file is incorrect version or corrupted!\n\n%s"
+    IDS_FILE_PROJSAVE       "Cannot save project file!\n\n%s"
+#
+#	More general messages and errors
+#
+    IDS_FILE_ERRORJWPCE     "File is not a JWPce file!\n\n%s"
+    IDS_FILE_REVERT         "File %s has been changed!\n\nAre you sure you want to revert to an old version?"
+    IDS_FILE_ERRORTEMP      "Unable to open temporary file to save!\n\n%s"
+    IDS_FILE_ERRORWRITE     "An error occured writing to file!\n\n%s"
+    IDS_FILE_OVERWRITE      "File %s already exists.\n\nAre you sure you want to overwrite it?"
+#
+#	These are the file types for the Save and Save As dialogs.  
+#	Each type contains a description and an extension part.  Do
+#	not change the extension part.  The \t character is being 
+#	used as a marker to seperate entires.
+#
+    IDS_FILE_FILTERSGENERAL "Normal   (*.jce)\t*.jce\tJWP   (*.jwp)\t*.jwp\tEUC   (*.euc)\t*.euc\tShift-JIS   (*.sjs)\t*.sjs\tNew JIS   (*.jis)\t*.jis\tOld JIS   (*.old)\t*.old\tNEC JIS   (*.nec)\t*.nec\tUnicode   (*.*)\t*.*\tUTF-7   (*.utf/*.txt)\t*.txt;*.utf\tUTF-8   (*.utf/*.txt)\t*.txt;*.utf\tJFC   (*.jfc)\t*.jfc\tJWPce Project (*.jcp)\t*.jcp\t"
+#
+#	This is as above, but this is the Open file dialog.
+#
+    IDS_FILE_FILTERSOPEN    "Auto-Detect   (*.*)\t*.*\tJapanese File Types\t*.jce;*.jwp;*.euc;*.sjs;*.jis;*.old;*.nec;*.utf;*.jfc;*.jcp;*.txt\tAscii   (*.txt)\t*.txt\t"
+#
+#	Another error message.
+#
+    IDS_FILE_DAMMAGED       "Not all of this file could be read (too large or corrupted file).  Do you want to read as much of the file as possible?\n%s"
+
+#-------------------------------------------------------------
+#
+#	Status line strings.  These may not need changing, but 
+#	they can be if necessary.  Be careful, about the length
+#	rules or there will be problems.
+#
+#	Edit mode -- Must be 3 characters plus space!
+#
+    IDS_STAT_OVR            "OVR "
+    IDS_STAT_INS            "INS "
+#
+#	Input mode -- Must be 5 characters!
+#
+    IDS_STAT_ASCII          "ASCII"
+    IDS_STAT_KANJI          "KANJI"
+    IDS_STAT_JASCII         "JASCI"
+#
+#	Used in future version -- Half-width kana.
+#
+    IDS_STAT_HALFKANA       "HKANA"
+#
+#	File types
+#
+    IDS_STAT_UNTYPED        "[untyped]"
+    IDS_STAT_TYPEASCII      "[ascii]"
+    IDS_STAT_TYPEJWPCE      "[Normal-JWPce]"
+    IDS_STAT_TYPEJWP        "[Normal-JWP]"
+    IDS_STAT_TYPEEUC        "[EUC]"
+    IDS_STAT_TYPESJIS       "[Shift-JIS]"
+    IDS_STAT_TYPENEW        "[New-JIS]"
+    IDS_STAT_TYPEOLD        "[Old-JIS]"
+    IDS_STAT_TYPENEC        "[NEC-JIS]"
+    IDS_STAT_TYPEUNICODE    "[UNICODE]"
+    IDS_STAT_TYPEUTF7       "[UTF-7]"
+    IDS_STAT_TYPEUTF8       "[UTF-8]"
+    IDS_STAT_TYPEJFC        "[JFC]"
+#
+#	For later version.  Don't change yet.
+#
+    IDS_STAT_TYPE1          "."
+
+#-------------------------------------------------------------
+#
+#	Strings used by the list handler.  This system is used
+#	to processes many different lists: user dictionary, 
+#	user kana->kanji conversions, searched dictionaries, etc.
+#
+    IDS_LIST_IMPORT         "All Files   (*.*)\t*.*\t"
+    IDS_LIST_IMPORTERROR    "Cannot open file insufficient memory!\n\n%s"
+#
+#	Added to the list popup after user has inserted to a file.
+#
+    IDS_LIST_POPUP          "&Insert to %s"
+
+#-------------------------------------------------------------
+#
+#	File formatting errors, generated via file or paragraph
+#	formatting changes.
+#
+    IDS_FP_FORMATFILE       "Format File"
+    IDS_FP_INVALIDTEXT      "Invalid indent!\n\nIndented paragraph must fit on page."
+    IDS_FP_INVALIDTITLE     "Formatting Error"
+
+#-------------------------------------------------------------
+#
+#	Color kanji messages.
+#
+#	Count Kanji strings.  These make up the summory message
+#	after the count.  The second string here contains many
+#	lines, and is used to generate the main part of the summary
+#	message
+#
+#	Both features use the same two character code, so they are sort of mixed.
+#
+    IDS_CK_TEXT             "Color kanji list built, %d kanji extracted."
+    IDS_CK_TITLE            "Color Kanji List Built"
+    IDS_CK_ERROR            "Cannot save color-kanji list\n\n%s."
+    IDS_CK_SUMMARYTITLE     "Count Summary"
+    IDS_CK_SUMMARY          "Total:\t%d\n\nKanji:\t%d\t(on list=%d  off list=%d)\nDif Kanji:\t%d\t(on list=%d  off list=%d)\nKana:\t%d\t(hiragana=%d  katakana=%d)\nASCII:\t%d\t(ascii=%d  j-ascii=%d)\nOther:\t%d"
+    IDS_CK_APPEND           "Color kanji list built, %d kanji.\n\n%d kanji added."
+    IDS_CK_REMOVE           "Color kanji list built, %d kanji.\n\n%d kanji removed."
+    IDS_CK_VIEWNAME         ":: Color Kanji List"
+
+#-------------------------------------------------------------
+#
+#	Search and replace messages
+#
+    IDS_SR_NOTFOUND         "Search not found!"
+    IDS_SR_CHANGESMADE      "%d change(s) made."
+    IDS_SR_CHANGES          "Changes"
+
+#-------------------------------------------------------------
+#
+#	User kana->kanji conversion editor strings.  Most of these
+#	are error messages about the conversions.
+#
+    IDS_CE_ERRORTEXT        "Cannot load User Conversion File!  The file is corrupt or incorrect type!\n\n%s"
+    IDS_CE_ERRORTITLE       "User Conversion Error!"
+    IDS_CE_ERROREMPTY       "Kana or Kanji input is empty!"
+    IDS_CE_ERRORKANA        "Kana string must contain only hiragana characters!"
+    IDS_CE_ERRORGODAN       "Kana must have a verb ending (for godan doushi)\n\n(u,ku,gu,su,tu,nu,bu,mu,ru)!"
+    IDS_CE_ERRORVERB        "Cannot have multiple kanji for verbs or i-adjective entries!"
+    IDS_CE_FILETYPE         "User conversions   (*.cnv)\t*.cnv"
+    IDS_CE_ERROROPEN        "Unable to Open User Conversion Dictionary File!\n\n%s"
+#
+#	Message generated when trying to close JWPce when  the 
+#	user conversions dialog is still open.
+#
+    IDS_CE_CHANGEDTEXT      "The user conversions may have changed.  Do you want to save the changes?"
+    IDS_CE_CLOSE            "Closing User Conversions!"
+#
+#	User conversion errors.
+#
+    IDS_CE_ERRORRUVERB      "Kana must end in ru for an ichidan verb!"
+    IDS_CE_ERRORIADJ        "Kana must end in i for an i-adjitive!"
+
+#-------------------------------------------------------------
+#
+#	Strings used for the Character Information Dailog
+#
+#	Types of characters
+#
+    IDS_KI_TYPEUNKNOWN      "Unknown"
+    IDS_KI_TYPEASCII        "ASCII"
+    IDS_KI_TYPEEXTENDED     "Extended OEM"
+    IDS_KI_TYPESYMBOL       "Japanese symbol"
+    IDS_KI_TYPEJASCII       "Japanese ASCII"
+    IDS_KI_TYPEHIRAGANA     "Hiragana"
+    IDS_KI_TYPEKATAKANA     "Katakana"
+    IDS_KI_TYPEGREEK        "Greek"
+    IDS_KI_TYPERUSSIAN      "Russian"
+    IDS_KI_TYPERESERVED     "Reserved"
+    IDS_KI_TYPEKANJI1       "Kanji (common, I)"
+    IDS_KI_TYPEKANJI2       "Kanji (uncommon, II)"
+#
+#	Type of SKIP code miss-coding.
+#
+    IDS_KI_SKIPPOSITION     "position"
+    IDS_KI_SKIPSTROKE       "stroke"
+    IDS_KI_SKIPBOTH         "both"
+    IDS_KI_SKIPBREEN        "Breen"
+#
+#	Problems opeing the kanji inforamtion file.
+#
+    IDS_KI_ERRORTITLE       "Kanji Info Error!"
+    IDS_KI_ERROROPEN        "Unable to open kanji info file!\n\n%s"
+    IDS_KI_ERRORVERSION     "Incorrect version of the kanji info file!\n\n%s"
+#
+#	Lables used for Jpanese list box
+#
+    IDS_KI_LISTMEANINGS     "meanings"
+    IDS_KI_LISTONYOMI       "on-yomi"
+    IDS_KI_LISTKUNYOMI      "kun-yomi"
+    IDS_KI_LISTNANORI       "nanori"
+#
+#	Items that can be arranged in the list.
+#
+    IDS_KI_ITEMTYPE         "Type"
+    IDS_KI_ITEMJISCODE      "JIS Code"
+    IDS_KI_ITEMSHIFTJIS     "shift-JIS"
+    IDS_KI_ITEMUNICODE      "Unicode"
+    IDS_KI_ITEMSTROKES      "Strokes"
+    IDS_KI_ITEMGRADE        "Grade"
+    IDS_KI_ITEMHELSON       "Nelson"
+    IDS_KI_ITEMHALPERN      "Halpern"
+    IDS_KI_ITEMSPAHN        "Spahn"
+    IDS_KI_ITEMFOURCORNERS  "Four Corners"
+    IDS_KI_ITEMMOROHASHI    "Morohashi"
+    IDS_KI_ITEMPINYIN       "PinYin"
+    IDS_KI_ITEMKOREAN       "Korean"
+    IDS_KI_ITEMFREQUENCY    "Frequency"
+    IDS_KI_ITEMHENSHALL     "Henshall"
+    IDS_KI_ITEMGAKKEN       "Gakken"
+    IDS_KI_ITEMHEISIG       "Heisig"
+    IDS_KI_ITEMONEILL       "O'Neill"
+    IDS_KI_ITEMDEROO        "DeRoo"
+    IDS_KI_ITEMKANJILEARN   "Kanji Learners"
+
+#-------------------------------------------------------------
+#
+#	More Character Information -- These are mostly the 
+#	cross reference entires.
+#
+    IDS_MI_NELSON           "Nelson\t\t%d"
+    IDS_MI_HALPERN          "Halpern\t\t%d"
+    IDS_MI_ONEILL           "O'Neill\t\t%d"
+    IDS_MI_JIS0208          "JIS0208\t\t%x"
+    IDS_MI_JIS0212          "JIS0212\t\t%x"
+    IDS_MI_SKIP             "SKIP\t\t%d-%d-%d (%s)"
+    IDS_MI_DEROO            "De Roo\t\t%d"
+
+#-------------------------------------------------------------
+#
+#	Dictionary strings.  These control the intializtation of the dictionary.  The 
+#	first line is a dialog box generated when you start JWPce.  All of the others are
+#	the names of the standard dictionaries.
+#
+#	The IDS_DICT_LANGUAGE string indicates the name of a special language dictionary.
+#	If specified, this dictionary will be searched before all other dictionaires.
+#	This provides a methode for localizating the dictionary search.
+#
+    IDS_DICT_ERROR          "Unable to load the dictionaries configuration file %s.\n\nInitializing with default values!"
+    IDS_DICT_LANGUAGE       "."
+    IDS_DICT_NAMECLASSICAL  "CLASSICAL"
+    IDS_DICT_NAMEEDICT      "EDICT"
+    IDS_DICT_NAMEENAMDICT   "ENAMDICT"
+    IDS_DICT_NAMEUSER       "USER"
+
+#-------------------------------------------------------------
+#
+#	Dictionary Options Dialog -- This is the list of excuded
+#	items from the dictionary search.
+#
+    IDS_DO_BEGIN            "not at beginning of word"
+    IDS_DO_END              "not at end of word"
+    IDS_DO_PERSONALNAMES    "personal names"
+    IDS_DO_PLACENAMES       "place names"
+    IDS_DO_VULGAR           "vulgar expression or word"
+    IDS_DO_X                "rude or X-rated terms"
+    IDS_DO_COLLOQUIAL       "colloquialism"
+    IDS_DO_MANGA            "manga slangs"
+    IDS_DO_SLANG            "slang"
+    IDS_DO_MARIAL           "martial arts terms"
+    IDS_DO_IDIOMATIC        "idiomatic expressions"
+    IDS_DO_ARCHAIC          "archaism"
+    IDS_DO_OBSOLETE         "obsolete term"
+    IDS_DO_OBSCURE          "obscure term"
+    IDS_DO_KANA             "out-dated or obsolete kana usage"
+    IDS_DO_ABBREVIATION     "abbreviation"
+    IDS_DO_POLITE           "polite (teineigo) language"
+    IDS_DO_HUMBLE           "humble (kenjougo) language"
+    IDS_DO_FAMILIAR         "familiar language"
+    IDS_DO_HONORIFIC        "honorific or respectful (sonkeigo) language"
+    IDS_DO_FEMALE           "female term or language"
+    IDS_DO_MALE             "Male term or language"
+    IDS_DO_PREFIX           "prefixes"
+    IDS_DO_SUFFIX           "suffixes"
+    IDS_DO_KANJI            "words containing outdated kanji"
+
+#-------------------------------------------------------------
+#
+#	User Dictionary Messages
+#
+    IDS_DE_ERROR            "User Dictionary Error!"
+    IDS_DE_ERRORKANA        "Kana input is empty or contains ascii space characters!"
+    IDS_DE_ERRORNONKANA     "Are You Sure?\n\nKana input string contains non-kana Characters."
+    IDS_DE_ERRORMEANING     "No meaning has been supplied!"
+#
+#	File type for inproting a user dictionary.  
+#
+    IDS_DE_FILETYPE         "User dictionaries   (*.dct)\t*.dct"
+    IDS_DE_ERROROPEN        "Unable to Open User Dictionary File!\n\n%s"
+
+#-------------------------------------------------------------
+#
+#	Searched dictionary messages.
+#
+#	Flags
+#
+    IDS_DS_ERROR            "Dictionary Error!"
+    IDS_DS_ERRORNOTDICT     "File is not a dictionary file or is corrupted!\n\n%s"
+    IDS_DS_ALREADYTEXT      "Do you want to replace the description with the first dictionary entry?"
+    IDS_DS_ALREADYTITLE     "Already has a description"
+    IDS_DS_ERROROPEN        "Unable to Open Dictionaries List!\n\n%s"
+    IDS_DS_FILETYPE         "All Files   (*.*)\t*.*\t\t"
+    IDS_DS_ERROREMPTY       "Dictionary name or file is empty!"
+    IDS_DS_DOESNOTEXIST     "Dictionary file (or index) does not exist, do you want to continue?\n\n%s"
+
+#-------------------------------------------------------------
+#
+#	Dictonary Dialog -- Some of these are error messages, 
+#	the rest are strings to go in the message spot in the
+#	dialog box.
+#
+    IDS_DD_CLASSICAL        "Unable to open classical dictionary!\n\n%s"
+    IDS_DD_CANNOTOPEN       "Unable to open dictionary!\n\n%s"
+    IDS_DD_MATCHREJECT      "matches: %d\nrejected: %d"
+    IDS_DD_MATCH            "matches: %d"
+    IDS_DD_DICTINDEX        "Cannot open dictionary and/or index file!\n\n%s"
+    IDS_DD_SEARCHING        "Searching ..."
+    IDS_DD_ERRORLENGTH      "Must have at least 3 ascii, 2 kana, or 1 kanji for a dictionary search."
+    IDS_DD_ERRORASCIIKANA   "Cannot search dictionary for combined kana & ascii string."
+    IDS_DD_ABORTREJECT      "ABORT [%d]\nrejected [%d]"
+    IDS_DD_ABORT            "ABORT [%d]"
+    IDS_DD_NOMATCH          "No Matches!"
+    IDS_DD_NOKANJI          "Pattern searches require at least on kani to anchor the search!"
+    IDS_DD_ADVANCED         "advanced"
+
+#-------------------------------------------------------------
+#
+#	Message generated when trying to close JWPce when the user
+#	dictionary is still open.
+#
+    IDS_DU_CHANGEDTEXT      "The user dictionary may have changed.  Do you want to save the changes?"
+    IDS_DU_CLOSE            "Closing User Dictionary!"
+
+#-------------------------------------------------------------
+#
+#	Strings used in the dictionaries
+#
+#	Table itmes, for normats, names, and sepcial.
+#
+    IDS_DC_FORMATEUC        "EUC"
+    IDS_DC_FORMATUTF8       "UTF-8"
+    IDS_DC_FORMATMIXED      "Mixed"
+    IDS_DC_ERR              "ERR!"
+    IDS_DC_YES              "Yes"
+    IDS_DC_NO               "---"
+    IDS_DC_NONAMES          "No"
+    IDS_DC_NAMES            "Yes"
+    IDS_DC_NAMESONLY        "Only"
+    IDS_DC_CLASSICAL        "Classical"
+    IDS_DC_USER             "USER"
+#
+#	Column names
+#
+    IDS_DC_COLUMNNAME       "Dictionary"
+    IDS_DC_COLUMNFORMAT     "Format"
+    IDS_DC_COLUMNINDEX      "Idx"
+    IDS_DC_COLUMNNAMES      "Names"
+    IDS_DC_COLUMNSPECIAL    "Special"
+    IDS_DC_COLUMNFILE       "File Name"
+    IDS_DC_COLUMNTYPE       "Type"
+#
+#	Types
+#
+    IDS_DC_TYPEIDX          "Idx"
+    IDS_DC_TYPEBUF          "Buf"
+    IDS_DC_TYPEMEM          "Mem"
+#
+#	More column names
+#
+    IDS_DC_COLUMNKEEP       "Keep"
+    IDS_DC_COLUMNQUIET      "Quiet"
+
+#-------------------------------------------------------------
+#
+#	Messages used by kanji lookup dialogs.
+#
+    IDS_RL_NONE             "None!"
+    IDS_RL_TOOMANY          "%d\nToo Many!"
+
+#-------------------------------------------------------------
+#
+#	Index Lookup Dialog -- Mostly the names of the index 
+#
+    IDS_IL_NELSON           "Modern Reader's Japanese-English Character Dictionary, Andrew Nelson"
+    IDS_IL_HAIG             "The New Nelson Japanese-English Character Dictionary, John Haig"
+    IDS_IL_HALPERN          "The New Japanese-English Character Dictionary, Jack Halpern"
+    IDS_IL_GRADE            "Grade Level"
+    IDS_IL_MOROHASHILONG    "Morohashi Daikanwajiten (full index)"
+    IDS_IL_MOROHASHISHORT   "Morohashi Daikanwajiten (volume index)"
+    IDS_IL_SPAHN            "Kanji & Kana, Spahn and Hadamitzky"
+    IDS_IL_HENSHALL         "A Guide To Remembering Japanese Characters, Kenneth G. Henshall"
+    IDS_IL_GAKKEN           "A New Dictionary  of Kanji Usage, Gakken"
+    IDS_IL_HEISIG           "Remembering The Kanji, James Heisig"
+    IDS_IL_ONEILL           "Japanese Names, P. G. O'Neill"
+    IDS_IL_FREQUENCY        "Frequency-of-use ranking, Jack Halpern"
+    IDS_KI_BLANK            "blank"
+    IDS_IL_DEROO            "2001 Kanji, Father Joseph De Roo"
+    IDS_IL_ONEILLEK         "Essential Kanji, P. G. O'Neill"
+    IDS_IL_HALPERNKLD       "Kanji Learners Dictionary, Jack Halpern"
+
+#-------------------------------------------------------------
+#
+#	More general and radical lookup dialog text
+#
+    IDS_RL_ERRORRADINDEX    "Kanji radical index"
+    IDS_RL_ERROR            "Radical Lookup ERROR!"
+    IDS_RL_ERRORTEXT        "Unable to open %s file!\n\n%s"
+    IDS_RL_ERRORSTRINDEX    "Kanji stroke index"
+
+#-------------------------------------------------------------
+#
+#	Reading Lookup Dialog.
+#
+    IDS_RL_ON               "on-yomi"
+    IDS_RL_KUN              "kun-yomi"
+    IDS_RL_ONKUN            "on-yomi or kun-yomi"
+    IDS_RL_MEANING          "meaning"
+    IDS_RL_NANORI           "nanori"
+    IDS_RL_PINYIN           "pinyin"
+    IDS_RL_KOREAN           "korean"
+    IDS_RL_ERRORKANA        "Kana Error"
+    IDS_RL_ERRORKANAFOUND   "Kana character found!"
+    IDS_RL_ERRORNONKANA     "Invalid non-kana character found!"
+
+#-------------------------------------------------------------
+#
+#	Page names for Options dialog
+#
+    IDS_OPTS_GENERAL        "General"
+    IDS_OPTS_DISPLAY        "Display"
+    IDS_OPTS_FONT           "Font/Format"
+    IDS_OPTS_FILECLIP       "File/Clipboard"
+    IDS_OPTS_MISC           "Misc"
+    IDS_OPTS_ADVANCED       "Advanced"
+
+#-------------------------------------------------------------
+#
+#	Fonts page text.
+#
+    IDS_OF_JIS              "JIS table font"
+    IDS_OF_SYSTEM           "system font"
+    IDS_OF_EDIT             "Japanese edit control font"
+    IDS_OF_LIST             "Japanese list control font"
+    IDS_OF_BAR              "kanji bar font"
+    IDS_OF_FILE             "file font (main font)"
+    IDS_OF_BIG              "big kanji font"
+    IDS_OF_PRINT            "print font"
+    IDS_OF_CLIP             "clipboard bitmap font"
+    IDS_OF_PIXELS           "&Pixels"
+    IDS_OF_POINTS           "&Points"
+
+#-------------------------------------------------------------
+#
+#	For File/Clipboard page of Options Dailog -- Types for
+#	the clipboard import/export.
+#
+    IDS_OC_AUTO             "Auto-Detect"
+    IDS_OC_EUC              "EUC"
+    IDS_OC_SHIFTJIS         "Shift-JIS"
+    IDS_OC_NEWJIS           "New JIS"
+    IDS_OC_OLDJIS           "Old JIS"
+    IDS_OC_NECJIS           "NEC JIS"
+    IDS_OC_UNICODE          "UNICODE"
+    IDS_OC_UTF7             "UTF-7"
+    IDS_OC_UTF8             "UTF-8"
+
+#-------------------------------------------------------------
+#
+#	Page names for the Layout Dialog
+#
+    IDS_LAYOUT_MARGINS      "Margins"
+    IDS_LAYOUT_HEADFOOT     "Headers/Footers"
+    IDS_LAYOUT_SUMMARY      "Summary"
+    IDS_LAYOUT_DATETIME     "Date/Time"
+    IDS_LAYOUT_ADVANCED     "Advanced"
+
+#-------------------------------------------------------------
+#
+#	Header page of the Layout Dialog
+#
+#	Headers/Footer options for even/odd pages.
+#
+    IDS_LH_HEADODD          "Header, Odd Pages"
+    IDS_LH_HEADEVEN         "Header, Even Pages"
+    IDS_LH_FOOTODD          "Footer, Odd Pages"
+    IDS_LH_FOOTEVEN         "Footer, Even Pages"
+#
+#	Header/Footer otpions
+#
+    IDS_LH_HEADER           "Header"
+    IDS_LH_FOOTER           "Footer"
+
+#-------------------------------------------------------------
+#
+#	Margins page of the Layout dialog
+#
+    IDS_LM_CM               "Units: cm"
+    IDS_LM_INCH             "Units: inches"
+
+#=====================================================================
+#=====================================================================
+#
+#	End of file!  Thank You for all the hard work!
+#
+#=====================================================================
+#=====================================================================
